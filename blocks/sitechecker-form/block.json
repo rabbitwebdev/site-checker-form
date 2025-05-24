@@ -1,0 +1,83 @@
+{
+    "name": "acf/sitechecker-form",
+    "title": "Site Checker",
+    "description": "A custom sitechecker-form block that uses ACF fields.",
+    "style": [ "file:./sitechecker-form.css" ],
+    "category": "formatting",
+    "icon": "editor-paragraph",
+    "keywords": ["sitechecker-form", "quote"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "sitechecker-form.php"
+    },
+    "settings": {
+        	"appearanceTools": true,
+		"typography": {
+			"fontWeight": "900",
+           "fontFamily": "Montserrat, sans-serif"
+		}
+	},
+     "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "bottom": "0rem",
+                        "top": "0rem"
+                    },
+                    "padding": "1rem"
+                },
+                "background": {
+                    "backgroundImage": {
+                        "url": "IMAGE_URL"
+                    },
+                    "backgroundPosition": "50% 50%",
+                    "backgroundSize": "cover"
+                }
+            },
+             "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+           	"fontWeight": "900",
+           "fontFamily": "Montserrat, sans-serif",
+            "textTransform": true,
+            "textDecoration": true,
+            "textAlign": true
+        }
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "var:preset|color|accent-5"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "var:preset|color|contrast"
+        }
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "html": true,
+        "jsx": true,
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+           	"fontWeight": "900",
+           "fontFamily": "Montserrat, sans-serif",
+            "textTransform": true,
+            "textDecoration": true,
+            "textAlign": true
+        },
+        "mode": true,
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": "var:preset|spacing|50"
+        },
+        "color": {
+            "background": true,
+            "text": true
+        }
+    }
+}
